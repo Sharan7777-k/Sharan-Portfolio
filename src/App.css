@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ * {
+  transition: all 0.5s ease-in-out;
+}
+
+.hover-underline {
+  transition: all 0.1s ease-in-out;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px; 
+  color: #3182ce; 
+}
+.mobile-nav {
+  @apply fixed top-16 text-black font-bold bg-gray-500 w-full h-1/5 left-0;
+}
+
+.mobile-nav li {
+  @apply w-full h-full text-center border-b-2;
+}
+
+.project-button{
+  @apply fixed bottom-5 inline-block bg-blue-500 text-white dark:text-home py-2 px-4 rounded hover:bg-blue-700
+}
+
+.project-content{
+  @apply mb-14 font-poppins  text-sm leading-loose tracking-wide md:leading-loose md:tracking-wide
+}
+
+.project-image{
+  @apply w-full h-48 object-cover
+}
+
+html {
+  scroll-behavior: smooth;
+}
